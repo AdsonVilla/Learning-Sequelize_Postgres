@@ -3,10 +3,10 @@ Projeto de aprendizado da utilização da ORM Sequelize para banco de dados Post
 
 ## Etapas
 ### No terminal
-$ npm init -y
-$ npm install sequelize pg pg-hstore express
-$ npm install -g sequelize-cli
-$ sequelize-cli init
+- $ npm init -y
+- $ npm install sequelize pg pg-hstore express
+- $ npm install -g sequelize-cli
+- $ sequelize-cli init
 
 ### Na pasta config
 - Criação do arquivo "config.js"
