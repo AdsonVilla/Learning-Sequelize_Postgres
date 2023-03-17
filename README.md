@@ -16,7 +16,8 @@ Projeto de aprendizado da utilização da ORM Sequelize para banco de dados Post
 - Criação do arquivo "config.js"
 código:
 
-module.exports = {
+```
+  module.exports = {
   dialect: "postgres",
   host: "localhost",
   username: "postgres",
@@ -26,12 +27,15 @@ module.exports = {
     timestamps: true,
   },
 };
+```
 
 ### No terminal
-$ sequelize db:create
+
+```$ sequelize db:create```
 
 ### Criação do documento na pasta Migrations
-$ sequelize migration:create --name=planets
+
+```$ sequelize migration:create --name=planets```
 - Criação da tabela Planets
 - Código:
 
