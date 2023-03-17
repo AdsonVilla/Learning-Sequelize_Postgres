@@ -25,3 +25,35 @@ module.exports = {
 
 ### No terminal
 $ sequelize db:create
+
+### Criação do documento na pasta Migrations
+$ sequelize migration:create --name=planets
+- Criação da tabela Planets
+- Código:
+```module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.createTable('planets', { 
+      id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true,
+      },
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      position: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+    });
+  },
+
+  down: async  (queryInterface, Sequelize) => {
+    await queryInterface.dropTable('planets');
+  }
+}; ```
+
+### Para rodar a Migration
+```$ sequelize db:migrate```
