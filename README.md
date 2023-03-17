@@ -30,6 +30,7 @@ $ sequelize db:create
 $ sequelize migration:create --name=planets
 - Criação da tabela Planets
 - Código:
+
 ```module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('planets', { 
@@ -53,7 +54,11 @@ $ sequelize migration:create --name=planets
   down: async  (queryInterface, Sequelize) => {
     await queryInterface.dropTable('planets');
   }
-}; ```
+}; 
+```
+
 
 ### Para rodar a Migration
+
 ```$ sequelize db:migrate```
+
