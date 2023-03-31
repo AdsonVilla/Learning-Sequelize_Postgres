@@ -68,6 +68,9 @@ código:
 
 ### Para rodar a Migration
 
-```$ sequelize db:migrate```
+```
+$ sequelize db:migrate
+```
 
 ### Próximos passos
+- Transformando em uma API
