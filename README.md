@@ -70,3 +70,4 @@ código:
 
 ```$ sequelize db:migrate```
 
+### Próximos passos
