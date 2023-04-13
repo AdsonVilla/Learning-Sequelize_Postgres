@@ -74,3 +74,4 @@ $ sequelize db:migrate
 
 ### Próximos passos
 - Transformando em uma API;
+- Aplicar em um projeto;
