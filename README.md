@@ -73,4 +73,4 @@ $ sequelize db:migrate
 ```
 
 ### Próximos passos
-- Transformando em uma API
+- Transformando em uma API;
